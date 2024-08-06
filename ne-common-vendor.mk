@@ -28,6 +28,7 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/lights:$(TARGET_COPY_OUT_VENDOR)/bin/hw/lights \
     vendor/amlogic/ne-common/proprietary/vendor/bin/hw/subtitleserver:$(TARGET_COPY_OUT_VENDOR)/bin/hw/subtitleserver \
     vendor/amlogic/ne-common/proprietary/vendor/bin/remotecfg:$(TARGET_COPY_OUT_VENDOR)/bin/remotecfg \
+    vendor/amlogic/ne-common/proprietary/vendor/bin/resmanload:$(TARGET_COPY_OUT_VENDOR)/bin/resmanload \
     vendor/amlogic/ne-common/proprietary/vendor/bin/screencatch:$(TARGET_COPY_OUT_VENDOR)/bin/screencatch \
     vendor/amlogic/ne-common/proprietary/vendor/bin/screencontrol:$(TARGET_COPY_OUT_VENDOR)/bin/screencontrol \
     vendor/amlogic/ne-common/proprietary/vendor/bin/systemcontrol:$(TARGET_COPY_OUT_VENDOR)/bin/systemcontrol \
@@ -174,7 +175,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.systemcontrol@1.1.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.tvserver@1.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/modules/aml_chcon.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/aml_chcon.ko \
-    vendor/amlogic/ne-common/proprietary/vendor_dlkm/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/amlogic_fbc_lib.ko \
     vendor/amlogic/ne-common/proprietary/vendor/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/amlogic_fbc_lib.ko
 
 PRODUCT_PACKAGES += \
