@@ -174,8 +174,8 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.systemcontrol@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.systemcontrol@1.0.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.systemcontrol@1.1.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.systemcontrol@1.1.so \
     vendor/amlogic/ne-common/proprietary/vendor/lib/vendor.amlogic.hardware.tvserver@1.0.so:$(TARGET_COPY_OUT_VENDOR)/lib/vendor.amlogic.hardware.tvserver@1.0.so \
-    vendor/amlogic/ne-common/proprietary/vendor_dlkm/lib/modules/aml_chcon.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/aml_chcon.ko \
-    vendor/amlogic/ne-common/proprietary/vendor_dlkm/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR_DLKM)/lib/modules/amlogic_fbc_lib.ko
+    vendor/amlogic/ne-common/proprietary/vendor/lib/modules/aml_chcon.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/aml_chcon.ko \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/modules/amlogic_fbc_lib.ko:$(TARGET_COPY_OUT_VENDOR)/lib/modules/amlogic_fbc_lib.ko
 
 PRODUCT_PACKAGES += \
     droidlogic.software.core \
