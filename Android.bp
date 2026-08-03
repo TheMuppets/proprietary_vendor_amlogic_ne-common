@@ -269,7 +269,7 @@ cc_prebuilt_library_shared {
                 "libamlspeed",
                 "libalsautils",
                 "libdmabufheap",
-                "android.hardware.bluetooth.audio-V5-ndk",
+                "android.hardware.bluetooth.audio-V6-ndk",
                 "libbluetooth_audio_session_aidl",
                 "libbinder_ndk",
                 "libbase",
@@ -780,7 +780,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libamlaudiohal@7.0.so",
             ],
             shared_libs: [
-                "android.media.audio.common.types-V4-cpp",
+                "android.media.audio.common.types-V5-cpp",
                 "av-types-aidl-cpp",
                 "libamlaudiohal_deathhandler@7.0",
                 "libaudioclient_aidl_conversion",
