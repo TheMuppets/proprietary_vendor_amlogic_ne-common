@@ -145,6 +145,7 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.systemcontrol@1.0 \
     vendor.amlogic.hardware.systemcontrol@1.1 \
     vendor.amlogic.hardware.tvserver@1.0 \
+    com.google.android.widevine.nonupdatable \
     droidlogic.software.core \
     android.hardware.boot-service.droidlogic.xml \
     android.hardware.gatekeeper-service.amlogic.xml \

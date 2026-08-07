@@ -2679,6 +2679,14 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+prebuilt_apex {
+    name: "com.google.android.widevine.nonupdatable",
+    owner: "amlogic",
+    src: "proprietary/vendor/apex/com.google.android.widevine.nonupdatable.apex",
+    filename: "com.google.android.widevine.nonupdatable.apex",
+    soc_specific: true,
+}
+
 dex_import {
     name: "droidlogic.software.core",
     owner: "amlogic",
