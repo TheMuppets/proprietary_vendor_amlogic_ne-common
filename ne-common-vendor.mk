@@ -29,7 +29,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/bluetooth.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/bluetooth.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/dumpstate-default.droidlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dumpstate-default.droidlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/dvb.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/dvb.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/init/fs.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/fs.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/irblaster1.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/irblaster1.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/memtrack-amlogic.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack-amlogic.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/modules_load.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modules_load.rc \
