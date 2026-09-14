@@ -2679,6 +2679,97 @@ cc_prebuilt_library_shared {
     soc_specific: true,
 }
 
+cc_prebuilt_library_shared {
+    name: "libsystemcontrolservice_recovery",
+    stem: "libsystemcontrolservice",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/recovery/system/lib/libsystemcontrolservice.so",
+            ],
+            shared_libs: [
+                "libutils",
+                "libcutils",
+                "liblog",
+                "vendor.amlogic.hardware.systemcontrol@1.0",
+                "vendor.amlogic.hardware.systemcontrol@1.1",
+                "libbase",
+                "libhidlbase",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    recovery: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.amlogic.hardware.systemcontrol@1.0_recovery",
+    stem: "vendor.amlogic.hardware.systemcontrol@1.0",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/recovery/system/lib/vendor.amlogic.hardware.systemcontrol@1.0.so",
+            ],
+            shared_libs: [
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    recovery: true,
+}
+
+cc_prebuilt_library_shared {
+    name: "vendor.amlogic.hardware.systemcontrol@1.1_recovery",
+    stem: "vendor.amlogic.hardware.systemcontrol@1.1",
+    owner: "amlogic",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/recovery/system/lib/vendor.amlogic.hardware.systemcontrol@1.1.so",
+            ],
+            shared_libs: [
+                "vendor.amlogic.hardware.systemcontrol@1.0",
+                "libhidlbase",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    prefer: true,
+    recovery: true,
+}
+
 prebuilt_apex {
     name: "com.google.android.widevine.nonupdatable",
     owner: "amlogic",
@@ -2829,6 +2920,24 @@ prebuilt_etc_xml {
     filename_from_src: true,
     sub_dir: "vintf/manifest",
     soc_specific: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.boot-service_recovery.droidlogic.xml",
+    owner: "amlogic",
+    src: "proprietary/recovery/system/etc/vintf/manifest/android.hardware.boot-service_recovery.droidlogic.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    recovery: true,
+}
+
+prebuilt_etc_xml {
+    name: "android.hardware.fastboot-service.amlogic.xml",
+    owner: "amlogic",
+    src: "proprietary/recovery/system/etc/vintf/manifest/android.hardware.fastboot-service.amlogic.xml",
+    filename_from_src: true,
+    sub_dir: "vintf/manifest",
+    recovery: true,
 }
 
 sh_binary {
@@ -3686,6 +3795,102 @@ cc_prebuilt_binary {
     },
     prefer: true,
     soc_specific: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.boot-service_recovery",
+    owner: "amlogic",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/recovery/system/bin/hw/android.hardware.boot-service_recovery",
+            ],
+            shared_libs: [
+                "liblog",
+                "libbase",
+                "libbinder_ndk",
+                "android.hardware.boot@1.1",
+                "android.hardware.boot-V1-ndk",
+                "libsystemcontrolservice",
+                "libcutils",
+                "libutils",
+                "libz",
+                "vendor.amlogic.hardware.systemcontrol@1.0",
+                "vendor.amlogic.hardware.systemcontrol@1.1",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    recovery: true,
+}
+
+cc_prebuilt_binary {
+    name: "android.hardware.fastboot-service.amlogic_recovery",
+    owner: "amlogic",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/recovery/system/bin/hw/android.hardware.fastboot-service.amlogic_recovery",
+            ],
+            shared_libs: [
+                "libbase",
+                "libext4_utils",
+                "libfs_mgr",
+                "libhidlbase",
+                "libbinder_ndk",
+                "liblog",
+                "libutils",
+                "libcutils",
+                "android.hardware.fastboot@1.0",
+                "android.hardware.fastboot@1.1",
+                "android.hardware.fastboot-V1-ndk",
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    relative_install_path: "hw",
+    recovery: true,
+}
+
+cc_prebuilt_binary {
+    name: "systemcontrol_static",
+    owner: "amlogic",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/recovery/system/bin/systemcontrol_static",
+            ],
+            shared_libs: [
+                "libc++",
+                "libc",
+                "libm",
+                "libdl",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    recovery: true,
 }
 
 install_symlink {

@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/amlogic/ne-common
 
 PRODUCT_COPY_FILES += \
+    vendor/amlogic/ne-common/proprietary/recovery/system/etc/init/android.hardware.boot-service.droidlogic_recovery.rc:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/init/android.hardware.boot-service.droidlogic_recovery.rc \
+    vendor/amlogic/ne-common/proprietary/recovery/system/etc/init/android.hardware.fastboot-service.amlogic_recovery.rc:$(TARGET_COPY_OUT_RECOVERY)/root/system/etc/init/android.hardware.fastboot-service.amlogic_recovery.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/bluetooth/auto_pairing.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/auto_pairing.conf \
     vendor/amlogic/ne-common/proprietary/vendor/etc/bluetooth/blacklist.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/blacklist.conf \
     vendor/amlogic/ne-common/proprietary/vendor/etc/bluetooth/bt_vendor.conf:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth/bt_vendor.conf \
@@ -144,6 +146,9 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.systemcontrol@1.0 \
     vendor.amlogic.hardware.systemcontrol@1.1 \
     vendor.amlogic.hardware.tvserver@1.0 \
+    libsystemcontrolservice_recovery \
+    vendor.amlogic.hardware.systemcontrol@1.0_recovery \
+    vendor.amlogic.hardware.systemcontrol@1.1_recovery \
     com.google.android.widevine.nonupdatable \
     droidlogic.software.core \
     android.hardware.boot-service.droidlogic.xml \
@@ -161,6 +166,8 @@ PRODUCT_PACKAGES += \
     memtrack-amlogic.xml \
     thermal.xml \
     vendor.amlogic.hardware.screencontrol@1.0.xml \
+    android.hardware.boot-service_recovery.droidlogic.xml \
+    android.hardware.fastboot-service.amlogic.xml \
     ddrtest \
     android.hardware.audio.service-droidlogic \
     android.hardware.bluetooth@1.1-service-droidlogic \
@@ -187,7 +194,10 @@ PRODUCT_PACKAGES += \
     tee_key_inject \
     tee_preload_fw \
     tee_provision \
-    tspacktest
+    tspacktest \
+    android.hardware.boot-service_recovery \
+    android.hardware.fastboot-service.amlogic_recovery \
+    systemcontrol_static
 
 PRODUCT_PACKAGES += \
     vendor_lib_hw_vulkan_amlogic_so
