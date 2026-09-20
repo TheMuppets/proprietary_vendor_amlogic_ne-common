@@ -172,7 +172,6 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.screencontrol@1.0.xml \
     android.hardware.boot-service_recovery.droidlogic.xml \
     android.hardware.fastboot-service.amlogic.xml \
-    ddrtest \
     android.hardware.audio.service-droidlogic \
     android.hardware.bluetooth@1.1-service-droidlogic \
     android.hardware.boot-service \

@@ -3066,14 +3066,6 @@ prebuilt_etc_xml {
     recovery: true,
 }
 
-sh_binary {
-    name: "ddrtest",
-    owner: "amlogic",
-    src: "proprietary/vendor/bin/ddrtest.sh",
-    filename: "ddrtest.sh",
-    soc_specific: true,
-}
-
 cc_prebuilt_binary {
     name: "android.hardware.audio.service-droidlogic",
     owner: "amlogic",
