@@ -74,10 +74,13 @@ PRODUCT_PACKAGES += \
     screen_source.amlogic \
     libAmlAudioOutPort \
     libPQTableLD \
+    lib_avc_vpcodec \
     libadap_lcd \
     libadap_ld \
     libamaudioutils \
     libamaudioutils_boot \
+    libamffmpeg.vendor \
+    libamffmpegcodec \
     libamgralloc_ext \
     libaml_hal_lcd \
     libaml_hal_ld \
@@ -131,6 +134,7 @@ PRODUCT_PACKAGES += \
     libvendor_c2common \
     libvendor_c2componentstore \
     libvideotunnel \
+    libvp_hevc_codec_new \
     libbalance \
     libdpe \
     libhpeqwrapper \
