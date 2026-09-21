@@ -43,9 +43,6 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/tee_key_inject.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_key_inject.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/tee_preload_fw.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tee_preload_fw.rc \
     vendor/amlogic/ne-common/proprietary/vendor/etc/init/thermal.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermal.rc \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/lowmemorykiller.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lowmemorykiller.txt \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/lowmemorykiller_2G.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lowmemorykiller_2G.txt \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/lowmemorykiller_512M.txt:$(TARGET_COPY_OUT_VENDOR)/etc/lowmemorykiller_512M.txt \
     vendor/amlogic/ne-common/proprietary/vendor/etc/mali_platform.config:$(TARGET_COPY_OUT_VENDOR)/etc/mali_platform.config \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/android.software.cant_save_state.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.software.cant_save_state.xml \
     vendor/amlogic/ne-common/proprietary/vendor/etc/permissions/droidlogic.software.core.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/droidlogic.software.core.xml \
