@@ -53,7 +53,8 @@ PRODUCT_COPY_FILES += \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/amlogic/ne-common/proprietary/vendor/etc/seccomp_policy/mediaswcodec.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaswcodec.policy \
     vendor/amlogic/ne-common/proprietary/vendor/etc/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json \
-    vendor/amlogic/ne-common/proprietary/vendor/etc/wifi/p2p_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant.conf
+    vendor/amlogic/ne-common/proprietary/vendor/etc/wifi/p2p_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/p2p_supplicant.conf \
+    vendor/amlogic/ne-common/proprietary/vendor/lib/ms12/libdolbyms12.so:$(TARGET_COPY_OUT_VENDOR)/lib/ms12/libdolbyms12.so
 
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.1-resources-aidl \
@@ -168,6 +169,7 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.screencontrol@1.0.xml \
     android.hardware.boot-service_recovery.droidlogic.xml \
     android.hardware.fastboot-service.amlogic.xml \
+    dolby_fw_dolbyms12 \
     android.hardware.audio.service-droidlogic \
     android.hardware.bluetooth@1.1-service-droidlogic \
     android.hardware.boot-service \
@@ -199,4 +201,5 @@ PRODUCT_PACKAGES += \
     systemcontrol_static
 
 PRODUCT_PACKAGES += \
-    vendor_lib_hw_vulkan_amlogic_so
+    vendor_lib_hw_vulkan_amlogic_so \
+    vendor_lib_libdolbyms12_so

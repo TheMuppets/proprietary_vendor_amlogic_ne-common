@@ -3067,6 +3067,29 @@ prebuilt_etc_xml {
 }
 
 cc_prebuilt_binary {
+    name: "dolby_fw_dolbyms12",
+    owner: "amlogic",
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/bin/dolby_fw_dolbyms12",
+            ],
+            shared_libs: [
+                "libm",
+                "libdl",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "32",
+    strip: {
+        none: true,
+    },
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_binary {
     name: "android.hardware.audio.service-droidlogic",
     owner: "amlogic",
     target: {
@@ -4016,4 +4039,11 @@ install_symlink {
     soc_specific: true,
     installed_location: "lib/hw/vulkan.amlogic.so",
     symlink_target: "/vendor/lib/egl/libGLES_mali.so",
+}
+
+install_symlink {
+    name: "vendor_lib_libdolbyms12_so",
+    soc_specific: true,
+    installed_location: "lib/libdolbyms12.so",
+    symlink_target: "/vendor/lib/ms12/libdolbyms12.so",
 }
