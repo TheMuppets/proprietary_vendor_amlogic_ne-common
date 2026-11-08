@@ -145,8 +145,6 @@ PRODUCT_PACKAGES += \
     vendor.amlogic.hardware.systemcontrol@1.0 \
     vendor.amlogic.hardware.systemcontrol@1.1 \
     vendor.amlogic.hardware.tvserver@1.0 \
-    libHwAudio_dcvdec \
-    libHwAudio_dtshd \
     libsystemcontrolservice_recovery \
     vendor.amlogic.hardware.systemcontrol@1.0_recovery \
     vendor.amlogic.hardware.systemcontrol@1.1_recovery \
